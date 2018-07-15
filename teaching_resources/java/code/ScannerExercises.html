@@ -1,0 +1,79 @@
+{% highlight java %}
+/**
+* ---------------------------------------------------------------------------
+* File name: ScannerExercises.java
+* Project name: Study Guide
+* ---------------------------------------------------------------------------
+* Author’s name and email: Michael Schneider, schneidm@etsu.edu
+* Course-Section: All
+* Creation Date: 12/15/15
+* Last modified: Schneider 12/15/15 schneidm@etsu.edu
+* ---------------------------------------------------------------------------
+*/
+import java.util.Scanner;
+
+/**
+* Class Name: ScannerExercises <br>
+* Class Purpose: Examples for accepting values from a user, using a Scanne object <br>
+*
+* <hr>
+* Date created: 12/15/15 <br>
+* Last modified: Schneider 12/15/15 schneidm@etsu.edu
+* @author Michael Schneider
+*/
+
+public class ScannerExercises
+{
+
+	public static void main(String[] args)
+	{
+		/*******************************************************
+		*
+		*	Examples
+		*
+		********************************************************/
+		//Create a Scanner object called kb.  Just like any variable,
+		//any name that follows Coding Standards, can be used.
+		Scanner kb = new Scanner(System.in);
+		
+		System.out.println("Enter text information: ");
+		String info = kb.nextLine();//Receive a String value from the keyboard
+		
+		System.out.println("Enter a whole number: ");
+		int whole = kb.nextInt();//Receive a whole number from the keyboard
+		
+		System.out.println("Enter a decimal number: ");
+		double decimal = kb.nextDouble();//Receive a decimal number from the keyboard
+		
+		System.out.println("Enter a boolean value: ");
+		boolean check = kb.nextBoolean();//Receive a true/false value from the keyboard.
+		
+		//After grabbing a whole number, decimal number, or boolean, the carriage return
+		//is left on the buffer.  To remove, call kb.nextLine() to truncate it.  Without
+		//clearing the buffer, the next call to kb.nextLine() will be skipped.
+		kb.nextLine();//clear buffer
+		System.out.println("Enter text information: ");
+		info = kb.nextLine();//Receive a String value from the keyboard
+		
+		/*******************************************************
+		*
+		*	Practice Problems
+		*
+		********************************************************/
+		
+		// Problem 1: - Greet the user
+		//   A. Ask the user for his/her name
+		//   B. Greet the user by name
+		
+		// Problem 2: - Calculate the cost for a pizza order
+		//    A. Prompt the user for the # of pizzas being ordered & the price per pizza
+		//    B. Retrieve the values from the user with the Scanner kb
+		//    C. Display to the user the cost for purchasing the pizzas
+		
+		
+		// Problem 3: - Calculate and display the volume of a cylinder
+		//  Ask the user for the cylinder's radius & height.  Display to the user the cylinder's volume.
+		//  Volume = (Pi)(radius ^ 2)(height)
+	}
+}
+{% endhighlight %}

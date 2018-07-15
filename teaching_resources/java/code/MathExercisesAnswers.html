@@ -1,0 +1,110 @@
+{% highlight java %}
+/**
+* ---------------------------------------------------------------------------
+* File name: MathExercisesAnswers.java
+* Project name: Study Guide
+* ---------------------------------------------------------------------------
+* Author’s name and email: Michael Schneider, schneidm@etsu.edu
+* Course-Section: All
+* Creation Date: 12/15/15
+* Last modified: Schneider 12/15/15 schneidm@etsu.edu
+* ---------------------------------------------------------------------------
+*/
+
+
+/**
+* Class Name: MathExercisesAnswers<br>
+* Class Purpose: To provide answers to the math exercises <br>
+*
+* <hr>
+* Date created: 12/15/15 <br>
+* Last modified: Schneider 12/15/15 schneidm@etsu.edu
+* @author Michael Schneider
+*/
+public class MathExercisesAnswers{
+
+	public static void main(String[] args){
+	
+		/*******************************************************
+		*
+		*	Examples
+		*
+		********************************************************/
+	
+		//Declare a numeric variable and initialize it with a value
+		int startingValue = 5;
+		
+		//Use the addition operator and the compound addition operator to addition
+		//10 your variable.
+		
+		startingValue = startingValue + 10;
+		
+		startingValue += 10;
+		
+		
+		//Declare and initialize a whole number and decimal number variables
+		int whole = 17;
+		double decimal = 17.0;
+		
+		//Divide each variable by 3
+		whole /= 3;
+		decimal = decimal / 3;
+		
+		//Display the results
+		System.out.println("Whole: " + whole);
+		System.out.println("Decimal: " + decimal);
+		
+		/*******************************************************
+		*
+		*	Practice Problems
+		*
+		********************************************************/
+		
+		// Problem 1: Create appropriate variables to solve the problem
+		// You are creating a program to calculate total shipping weight for your packages.
+		// Your packages can contain any of the following items:
+		//	- Coffee beans (5 lbs)
+		//  - Coffee filters (3.5 lbs)
+		//  - Purified water (25 lbs)
+		// How much will a package weight if it contains 4 orders of coffee beans,
+		// 6 orders of coffee filters, and 2 containers of purified water?
+		// Display your results to the screen
+		double coffeeBeanWeight = 5.0;
+		double coffeeFilterWeight = 3.5;
+		double waterWeight = 25.0;
+		
+		double coffeeBeanPackage = coffeeBeanWeight * 4;
+		double coffeeFilterPackage = coffeeFilterWeight * 6;
+		double waterPackage = waterWeight * 2;
+		
+		double totalWeight = coffeeBeanPackage + coffeeFilterPackage + waterPackage;
+		
+		System.out.println("Coffee Bean Packaged Weight: " + coffeeBeanPackage + "(lbs)");
+		System.out.println("Coffee Filter Packaged Weight: " + coffeeFilterPackage + "(lbs)");
+		System.out.println("Purified Water Packaged Weight: " + waterPackage + "(lbs)");
+		System.out.println("Total Packaged Weight: " + totalWeight + "(lbs)");
+		
+		
+		//Problem 2 : If shipping costs $3.75 per lbs, how much will your shipment cost?
+		// Display your results to the screen
+
+		double costPerLbs = 3.75;
+		double shippingCost = totalWeight * costPerLbs;
+		System.out.println("Shipping cost = $" + shippingCost);
+		
+		
+		//Problem 3 : If half of your shipment is lost, what is the new shipping weight 
+		//			  and new cost for shipping?  Display your results to the screen
+		
+		double halfShippingWeight = totalWeight / 2;
+		double halfShippingCost = shippingCost / 2;
+		
+		System.out.println("Half of the shippment has been lost!!");
+		System.out.println("New Shipping Weight: "+ halfShippingWeight + "(lbs)");
+		System.out.println("New Shipping Cost: $" + halfShippingCost);
+		
+		
+	}
+
+}
+{% endhighlight %}

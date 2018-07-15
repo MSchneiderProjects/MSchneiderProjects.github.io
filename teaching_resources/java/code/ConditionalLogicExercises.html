@@ -1,0 +1,127 @@
+{% highlight java %}
+/**
+* ---------------------------------------------------------------------------
+* File name: ConditionalLogicExercises.java
+* Project name: Winter Study Guide
+* ---------------------------------------------------------------------------
+* Author’s name and email: Michael Schneider, schneidm@etsu.edu
+* Course-Section: All
+* Creation Date: 12/15/15
+* Last modified: Schneider 12/15/15 schneidm@etsu.edu
+* ---------------------------------------------------------------------------
+*/
+import java.util.Scanner;
+
+/**
+* Class Name: ConditionalLogicExercises <br>
+* Class Purpose: To give answers for the conditional statement exercises <br>
+*
+* <hr>
+* Date created: 12/15/15 <br>
+* Last modified: Schneider 12/15/15 schneidm@etsu.edu
+* @author Michael Schneider
+*/
+public class ConditionalLogicExercises{
+
+	public static void main(String[] args){
+	
+		/*******************************************************
+		*
+		*	Examples
+		*
+		********************************************************/
+	
+		//Declare a numeric variable and initialize it with a value
+		int check = 5;
+		
+		//Check if the variable is positive.  If it is, then print "Positive value!"
+		if(check > 0)
+		{
+			System.out.println("Positive value!");
+		}
+		
+		//Create a character variable with the value of 'c'
+		char letter = 'c';
+		
+		//Check letter's value using if/else if/else.  If letter's value is:
+		/*
+		*	'a' print "First letter of the alphabet"
+		*
+		*	'l' print "The letter that comes before m"
+		*
+		*	'z' print "The last letter of the alphabet"
+		*
+		*	for all other values print "Not a, l, or z!!!"
+		*/
+		if(letter == 'a')
+		{
+			System.out.println("First letter of the alphabet");
+		}
+		else if(letter == 'l')
+		{
+			System.out.println("The letter that comes before m");
+		}
+		else if(letter == 'z')
+		{
+			System.out.println("The last letter of the alphabet");
+		}
+		else
+		{
+			System.out.println("Not a, l, or z!!!");
+		}
+		
+		//Rewrite the previous example as a switch statement
+		switch(letter)
+		{
+			case 'a':
+				System.out.println("First letter of the alphabet");
+				break;
+				
+			case 'l':
+				System.out.println("The letter that comes before m");
+				break;
+				
+			case 'z':
+				System.out.println("The last letter of the alphabet");
+				break;
+				
+			default:
+				System.out.println("Not a, l, or z!!!");
+				
+		}
+		
+		/*******************************************************
+		*
+		*	Practice Problems
+		*
+		********************************************************/
+		
+		// Problem 1:
+		
+		//Part A. Create a positive numeric variable and a negative variable
+		
+		//Part B. Add the two variables 
+		
+		
+		//Part C. Check if the sum is positive or negative
+		//		  Print an appropriate message
+
+		
+		// Problem 2.
+		// You need to create a program that let's the user know if they 
+		// can sleep in.  A user can sleep in if it is a weekend and/or they are
+		// on vacation.  
+		// Example:
+		//		Saturday - Sleep in
+		//		New Years - Sleep in
+		//
+		// Ask the user if the day is a weekday or weekend and ask if it is a holiday.
+		// Then display to the user if they can or cannot sleep in.
+		
+		
+
+		
+	}
+
+}
+{% endhighlight %}

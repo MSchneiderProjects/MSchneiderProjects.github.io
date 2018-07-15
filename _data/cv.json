@@ -1,0 +1,143 @@
+{
+  "basics": {
+    "name": "Michael Schneider",
+    "label": "Graduate Student",
+    "picture": "/assets/images/bio-photo.png",
+    "email": "m.shcneider.programmer@gmail.com",
+    "phone": "",
+    "website": "MSchneiderProjects.github.io",
+    "summary": "Summary of Me HEre",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Boulder",
+      "countryCode": "US",
+      "region": "Colorado"
+    },
+    "profiles": [
+      {
+        "network": "github",
+        "username": "MSchneiderProjects",
+        "url": ""
+      },
+      {
+        "network": "linkedin",
+        "username": "",
+        "url": "www.linkedin.com/in/michael-schneider-2156b5a8"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "University of Colorado Boulder",
+      "position": "Graduate Student",
+      "website": "https://www.colorado.edu/cs/",
+      "startDate": "2018-8-01",
+      "endDate": "",
+      "summary": "Graduate Student",
+      "highlights": [
+		"Natural Language Processing",
+		"Computer Vision",
+		"Education Research"
+	  ]
+    },
+    {
+      "company": "East Tennessee State University",
+      "position": "Lecturer",
+      "website": "https://www.etsu.edu/computing",
+      "startDate": "2015-7-1",
+      "endDate": "2018-7-15",
+      "summary": "Taught undergraduate level courses (3-4 course load per semester).",
+      "highlights": [
+        "Arduino Programming",
+        "Assembly Language (x86)",
+        "Discrete Mathematics",
+        "Java & Object-Oriented Programming",
+        "Web Design (HTML/CSS)"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Niswonger & ETSU Code Camp",
+      "position": "Instructor & Course Creator",
+      "website": "http://www.easttennesseecc.com/",
+      "startDate": "2015-06-01",
+      "endDate": "2015-08-01",
+      "summary": "The Code Camps focused on introducing children from low-income backgrounds the fun of programming & STEM, to encourage them to pursue a college degree",
+      "highlights": [
+		"3D Printing / 3D Modeling (Tinkercad",
+		"Arduino / Robot / Drones",
+		"Java Programming",
+		"MIT's Scratch Programming",
+		"Web Development (HTML/PHP)"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "East Tennessee State University",
+      "area": "Computer Science",
+      "studyType": "Master",
+      "startDate": "2013-08-01",
+      "endDate": "2015-08-01",
+    },
+	{
+      "institution": "East Tennessee State University",
+      "area": "Computer Science",
+      "studyType": "Bachelor",
+      "startDate": "2008-08-01",
+      "endDate": "2013-05-01",
+    }
+  ],
+  "publications": [
+    {
+      "name": "Video compression for 3d media",
+      "publisher": "Hooli",
+      "releaseDate": "2014-10-01",
+      "website": "https://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
+      "summary": "Innovative middle-out compression algorithm that changes the way we store data."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "Master",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "Javascript"
+      ]
+    },
+    {
+      "name": "Compression",
+      "level": "Master",
+      "keywords": [
+        "Mpeg",
+        "MP4",
+        "GIF"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Wildlife",
+      "keywords": [
+        "Ferrets",
+        "Unicorns"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Erlich Bachman",
+      "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
+    }
+  ]
+}

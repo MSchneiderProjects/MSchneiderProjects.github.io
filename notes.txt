@@ -1,0 +1,8 @@
+Blog Notes
+Todo:
+   - Update Java Resources Page to include projects, labs, and practice questions [new layout? question/answer click button to collapse/show answer]
+   - Work on research section:
+	  - Detail research goals/interests
+   - About me
+      - modify resume to fit on webpage
+		Potential Theme - Timeline-Fixed

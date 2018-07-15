@@ -1,0 +1,222 @@
+{% highlight java %}
+/**
+* ---------------------------------------------------------------------------
+* File name: ConditionalLogicExercises.java
+* Project name: Winter Study Guide
+* ---------------------------------------------------------------------------
+* Author’s name and email: Michael Schneider, schneidm@etsu.edu
+* Course-Section: All
+* Creation Date: 12/15/15
+* Last modified: Schneider 12/15/15 schneidm@etsu.edu
+* ---------------------------------------------------------------------------
+*/
+import java.util.Scanner;
+
+/**
+* Class Name: ConditionalLogicAnswers <br>
+* Class Purpose: To give answers for the conditional statement exercises <br>
+*
+* <hr>
+* Date created: 12/15/15 <br>
+* Last modified: Schneider 12/15/15 schneidm@etsu.edu
+* @author Michael Schneider
+*/
+public class ConditionalLogicAnswers{
+
+	public static void main(String[] args){
+	
+		/*******************************************************
+		*
+		*	Examples
+		*
+		********************************************************/
+	
+		//Declare a numeric variable and initialize it with a value
+		int check = 5;
+		
+		//Check if the variable is positive.  If it is, then print "Positive value!"
+		if(check > 0)
+		{
+			System.out.println("Positive value!");
+		}
+		
+		//Create a character variable with the value of 'c'
+		char letter = 'c';
+		
+		//Check letter's value using if/else if/else.  If letter's value is:
+		/*
+		*	'a' print "First letter of the alphabet"
+		*
+		*	'l' print "The letter that comes before m"
+		*
+		*	'z' print "The last letter of the alphabet"
+		*
+		*	for all other values print "Not a, l, or z!!!"
+		*/
+		if(letter == 'a')
+		{
+			System.out.println("First letter of the alphabet");
+		}
+		else if(letter == 'l')
+		{
+			System.out.println("The letter that comes before m");
+		}
+		else if(letter == 'z')
+		{
+			System.out.println("The last letter of the alphabet");
+		}
+		else
+		{
+			System.out.println("Not a, l, or z!!!");
+		}
+		
+		//Rewrite the previous example as a switch statement
+		switch(letter)
+		{
+			case 'a':
+				System.out.println("First letter of the alphabet");
+				break;
+				
+			case 'l':
+				System.out.println("The letter that comes before m");
+				break;
+				
+			case 'z':
+				System.out.println("The last letter of the alphabet");
+				break;
+				
+			default:
+				System.out.println("Not a, l, or z!!!");
+				
+		}
+		
+		/*******************************************************
+		*
+		*	Practice Problems
+		*
+		********************************************************/
+		
+		// Problem 1:
+		
+		//Create a positive numeric variable and a negative variable
+		int positive = 20;
+		int negative = -32;
+		
+		//Add the two variables 
+		int sum = positive + negative;
+		
+		//check if the sum is positive, negative, or equals 0
+		//Print an appropriate message
+		if(sum < 0)
+		{
+			System.out.println("The sum of the numbers is a negative value");
+		}
+		else if(sum > 0)
+		{
+			System.out.println("The sum of the numbers is a positive value");
+		}
+		else
+		{
+			System.out.println("The sum of the numbers is 0");
+		}
+		
+		// Problem 2:
+		// Can the above code be rewritten as a switch statement?
+		// No, or at least not without using an if/else if/else set of statements to 
+		// modify the comparison variable. This is because each case must be a unique 
+		// value.  It is not practical to create cases for all of the positive/negative 
+		// values that sum could be set too!
+		if(sum < 0)
+		{
+			sum = -1;
+		}
+		else if(sum > 0)
+		{
+			sum = 1;
+		}
+		else
+		{
+			sum = 0;
+		}
+		
+		switch(sum)
+		{
+			case -1:
+				System.out.println("The sum of the numbers is a negative value");
+				break;
+			
+			case 1:
+				System.out.println("The sum of the numbers is a positive value");
+				break;
+				
+			default:
+				System.out.println("The sum of the numbers is 0");
+		}
+		
+		// Problem 3
+		// Present the user with the following menu:
+		//  Dear user, choose an option below:
+		//		1. Print "Hello Bob!"
+		//		2. Print the sum of 4 + 5
+		//		3. Print the difference of 4 -5
+		//
+		//  Use If, Else, and Else If statements to handle the users selection and then
+		//	create the code neccessary to implement the menu's logic.
+		
+		//Create Scanner
+		Scanner kb = new Scanner(System.in);
+		
+		//Display Prompt
+		System.out.println("Dear user, choose an option below:"
+							+"1. Print \"Hello Bob!\" "
+							+"2. Print the sum of 4 + 5 "
+							+"3. Print the difference of 4 - 5 ");
+							
+		int choice = kb.nextInt();
+		
+		if(choice == 1)
+		{
+			System.out.println("Hello Bob!");
+		}
+		else if(choice == 2)
+		{
+			sum = 4 + 5;//Remember don't do calculations in a print statement!
+			System.out.println("The sum of 4 + 5 = " + sum);
+		}
+		else if(choice == 3)
+		{
+			int diff = 4 - 5;
+			System.out.println("The difference between 4 - 5 = " + diff);
+		}
+		else//Error message for handling incorrect menu choices
+		{
+			System.out.println("Sorry but you did not select a correct choice!");
+		}
+		
+		//Problem 4
+		//Rewrite your code for Problem 3 with a switch statement
+		
+		switch(choice)
+		{
+			case 1:
+				System.out.println("Hello Bob!");
+				break;
+				
+			case 2:
+				sum = 4 + 5;//Remember don't do calculations in a print statement!
+				System.out.println("The sum of 4 + 5 = " + sum);
+				break;
+				
+			case 3:
+				int diff = 4 - 5;
+				System.out.println("The difference between 4 - 5 = " + diff);
+				break;
+				
+			default: //Error message for handling incorrect menu choices
+				System.out.println("Sorry but you did not select a correct choice!");
+		}
+		
+	}
+
+}
+{% endhighlight %}

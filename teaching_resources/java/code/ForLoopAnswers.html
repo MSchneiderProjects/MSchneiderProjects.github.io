@@ -1,0 +1,265 @@
+{% highlight java %}
+/**
+* ---------------------------------------------------------------------------
+* File name: ForLoopAnswers.java
+* Project name: Winter Study Guide
+* ---------------------------------------------------------------------------
+* Author’s name and email: Michael Schneider, schneidm@etsu.edu
+* Course-Section: All
+* Creation Date: 1/5/15
+* Last modified: Schneider 1/5/15 schneidm@etsu.edu
+* ---------------------------------------------------------------------------
+*/
+import java.util.Scanner;
+
+/**
+* Class Name: ForLoopAnswers <br>
+* Class Purpose: To give answers for the for loop exercises <br>
+*
+* <hr>
+* Date created: 1/5/15 <br>
+* Last modified: Schneider 1/5/15 schneidm@etsu.edu
+* @author Michael Schneider
+*/
+public class ForLoopAnswers{
+
+	public static void main(String[] args){
+	
+		/*******************************************************
+		*
+		*	Examples
+		*
+		********************************************************/
+		
+		//Create a for loop that displays 0 to 15 to the screen
+		//The counter (i) is initialized to 0
+		//
+		//The conditional statement (i < 16) states that the for loop will end when
+		//    the counter is no longer less than 16 (i.e. when the counter reaches 16)
+		//
+		//The incrementer (i++) states that the counter will only increase by values of 1
+		//
+		for(int i = 0; i < 16; i++)
+		{
+			System.out.print(" " + i);
+		}
+		
+		
+		//Create a for loop that only displays even numbers between 0 and 30
+		//The counter is initialized at 0, the first number in our range
+		//
+		//The conditional statement (i <=30) states that the loop will end when
+		//    the counter reaches a value greater than 30
+		//
+		//The incrementer (i+=2) states that the counter will increase by values of 2,
+		//    since the counter is initialized as an even number, only the even numbers
+		//    in the range will be displayed.
+		//
+		for(int i = 0; i <= 30; i+=2)
+		{
+			System.out.println(" " + i);
+		}
+		
+		//Rewrite the previous for loop to use a conditional statement to check
+		//    if the counter is even.
+		//The only change made from the previous for loop is in the incrementer.
+		//    The incrementer now only increases the counter by 1.  This moves the
+		//    logic for checking if the counter is even into the for loop itself.
+		//
+		for(int i = 0; i <=30; i++)
+		{
+			//Remember mod (%), returns the remainder from a division.  If a number
+			//    is divided by 2 and the remainder is 0, we have an even number.
+			if(i %2 == 0)
+			{
+				System.out.println(" " + i);
+			}
+		}
+		
+
+		/**********************************
+		*
+		*Counting Exercises
+		*
+		***********************************/
+		
+		//Problem 1
+		//Create a for loop that counts from 1 to 10
+		for(int i = 1; i < 11; i++){	
+			System.out.println("Counter: " + i);
+		}
+		
+		//Problem 2
+		//Create a for loop that counts from 3 to 15
+		for(int i = 3; i < 16; i++){
+			System.out.println("Counter: " + i);
+		}
+		
+		//Problem 3
+		//Create a for loop that counts from 0 to 50 by counting by 5
+		for(int i = 0; i < 51; i+=5){
+			System.out.println("Counter: " + i);
+		}
+		
+		//Problem 4
+		//Create a for loop that counts from 10 to 1
+		for(int i = 10; i > 0; i--){
+			System.out.println("Counter: " + i);
+		}
+		
+		//Problem 5
+		//Create a for loop that counts from 50 to 0 by counting down by 5
+		for(int i = 50; i >= 0; i-=5){
+			System.out.println("Counter: " + i);
+		}
+		
+		//Problem 6
+		//Create a for loop that count by multiples of 3, up to 90
+		for(int i = 1; i <= 90; i*=3){
+			System.out.println("Counter: " + i);
+		}
+		
+		/**********************************
+		*
+		*Repetitive Exercises
+		*
+		***********************************/
+		
+		//Problem 1
+		//Sum all the numbers from 1 to 50
+		int sum = 0;
+		for(int i = 1; i <= 50; i++){
+			sum+= i;
+		}
+		System.out.println("The sum of all values from 1 to 50 is: " + sum);
+		
+		//Problem 2
+		//Display all odd numbers from 0 to 16
+		for(int i = 0; i <= 16; i++){
+			if(i%2==1){
+				System.out.println(i + " is odd");
+			}
+		}
+		
+		//Problem 3
+		//Take 10 numbers, find their sum
+		Scanner keyboard = new Scanner(System.in);
+		sum = 0;
+		for(int i = 0; i < 10; i++){
+			System.out.println("Please enter number " + i + " of 10 : ");
+			sum+= keyboard.nextInt();
+		}
+		System.out.println("The total is: " + sum);
+		
+		//Problem 4
+		//Take 10 numbers from the user, display a message if
+		// x < 100 : "That number is a bit low"
+		// 100 < x < 200 : "That number is perfect!"
+		//x > 200 : "That number is crazy high!"
+		
+		for(int i = 0; i < 10; i++){
+			System.out.println("Please enter a number: ");
+			int number = keyboard.nextInt();
+			if(number < 100){
+				System.out.println("That number is a bit low");
+			}
+			else if(number < 200){
+				System.out.println("That number is perfect!");
+			}
+			else{
+				System.out.println("That number is crazy high!");
+			}
+		}
+		
+		//Problem 5
+		//Take 10 number pairs and provide a menu for the user 
+		//     1. Find the sum
+		//	   2. Find the difference
+		//     3. Find the product
+		//     4. Find the quotient
+		//Process the user's choice with if/else statements
+		for(int i = 0; i < 10; i++){
+			System.out.println("Please enter the first number: ");
+			int firstNumber = keyboard.nextInt();
+			
+			System.out.println("Please enter the second number: ");
+			int secondNumber = keyboard.nextInt();
+			
+			//Display menu
+			System.out.println("------Math Menu-------");
+			System.out.println("1. Find the sum");
+			System.out.println("2. Find the difference");
+			System.out.println("3. Find the product");
+			System.out.println("4. Find the quotient");
+			System.out.println("Please enter your choice: ");
+			int choice = keyboard.nextInt();
+			if(choice == 1){
+				int add = firstNumber + secondNumber;
+				System.out.println("The sum of " + firstNumber +" + " +secondNumber + " = " + add);
+			}
+			else if(choice == 2){
+				int diff= firstNumber - secondNumber;
+				System.out.println("The difference of "+ firstNumber +" - " +secondNumber + " = " + diff);
+			}
+			else if(choice == 3){
+				int prod = firstNumber * secondNumber;
+				System.out.println("The product of " + firstNumber +" * " +secondNumber + " = " + prod);
+			}
+			else if(choice == 4){
+				int quot = firstNumber / secondNumber;
+				System.out.println("The quotient of " + firstNumber +" / " +secondNumber + " = " + quot);
+			}
+			else{
+				System.out.println("You did not enter a recognized option from the menu");
+			}
+			
+		}
+		
+		//Problem 6: Rewrite Problem 5 using a switch statement to process the user's 
+		//			 response.
+		for(int i = 0; i < 10; i++){
+			System.out.println("Please enter the first number: ");
+			int firstNumber = keyboard.nextInt();
+			
+			System.out.println("Please enter the second number: ");
+			int secondNumber = keyboard.nextInt();
+			
+			//Display menu
+			System.out.println("------Math Menu-------");
+			System.out.println("1. Find the sum");
+			System.out.println("2. Find the difference");
+			System.out.println("3. Find the product");
+			System.out.println("4. Find the quotient");
+			System.out.println("Please enter your choice: ");
+			int choice = keyboard.nextInt();
+			switch(choice){
+				case 1: 
+					int add = firstNumber + secondNumber;
+					System.out.println("The sum of " + firstNumber +" + " +secondNumber + " = " + add);
+					break;
+					
+				case 2:
+					int diff= firstNumber - secondNumber;
+					System.out.println("The difference of "+ firstNumber +" - " +secondNumber + " = " + diff);
+					break;
+					
+				case 3:
+					int prod = firstNumber * secondNumber;
+					System.out.println("The product of " + firstNumber +" * " +secondNumber + " = " + prod);
+					break;
+					
+				case 4:
+					int quot = firstNumber / secondNumber;
+					System.out.println("The quotient of " + firstNumber +" / " +secondNumber + " = " + quot);
+					break;
+					
+				default:
+					System.out.println("You did not enter a recognized option from the menu");
+			}
+		}
+		
+		
+	}
+
+}
+{% endhighlight %}

@@ -1,0 +1,57 @@
+# Sample site navigation bar links
+main:
+ - title: Home
+   url: /
+ - title: About Me
+   url: /aboutMe/
+ - title: Research
+   url: /research/
+ - title: Teaching Resources
+   url: /teaching_resources/
+ - title: Blog Archive
+   url: /archive/
+
+teachingResources_java:
+ - title: Java Study Guides
+   children:
+    - title: "Primitive Data Types"
+      url: /teaching_resources/java/dataPrimitives/
+    - title: "Input with Scanner Class"
+      url: /teaching_resources/java/scanner/
+    - title: "Math Operations"
+      url: /teaching_resources/java/math/
+    - title: "Conditional Logic"
+      url: /teaching_resources/java/logic/
+    - title: "For Loops"
+      url: /teaching_resources/java/forloops/
+    - title: "While Loops"
+      url: /teaching_resources/java/whileloops/
+    - title: "Do While Loops"
+      url: /teaching_resources/java/dowhileloops/
+    - title: "Methods"
+      url: /teaching_resources/java/methods/
+    - title: "Classes"
+      url: /teaching_resources/java/classes/
+    - title: "Practice Projects"
+      url: /teaching_resources/java/practice/
+ - title: "Java Practice Labs"
+
+ - title: Java Practice Projects
+   children:
+    - title: "Solar Panel Calculator" 
+      url: /teaching_resources/java/solar/
+    - title: "Hardware Store - Part 1"
+      url: /teaching_resources/java/hardware1
+    - title: "Hardware Store - Part 2"
+      url: /teaching_resources/java/hardware2
+    - title: "Adventure Game - Part 1"
+      url: /teaching_resources/java/adventure1
+    - title: "Adventure Game - Part 2"
+      url: /teaching_resources/java/adventure2
+    - title: "Park Attendance Tracker"
+      url: /teaching_resources/java/park
+    - title: "Wine Chaptalization Calculator"
+      url: /teaching_resources/java/wine
+    - title: "CSV Formatted Ordering System"
+      url: /teaching_resources/java/csv
+    - title: 
